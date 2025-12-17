@@ -417,8 +417,9 @@ a:hover {
 }
 
 .row > .column img {
-    max-height: 200px;
+    max-height: 150px;
     width: auto;
+    cursor: pointer;
 }
 
 .row:after {

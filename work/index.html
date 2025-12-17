@@ -44,11 +44,23 @@
                             Coming soon... :)
                         </p>
 
-                        <!-- <figure class="row">
+<!--
+                        <figure class="row">
                             <section class="column">
-
+                                <img src="../images/pneumatic-board.png" onclick="openModal('farmModal');currentSlide('farmModal', 1)" class="hover-shadow">
                             </section>
-                        </figure> -->
+                            <section class="column">
+                                <img src="../images/pneumatic-pcba.jpg" onclick="openModal('farmModal');currentSlide('farmModal', 1)" class="hover-shadow">
+                            </section>
+                        </figure>
+
+                        <figure class="row">
+                            <section class="column">
+                                <img src="../images/" alt="">
+                            </section>
+                        </figure>
+
+                    -->
                     </article>
                 </section>
             </section>
@@ -75,36 +87,36 @@
                         <!-- creating rows/columns for pictures -->
                         <figure class="row">
                             <section class="column">
-                                <img src="../images/candlemaker-board.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                                <img src="../images/candlemaker-board.png" onclick="openModal('candlemakerModal');currentSlide('candlemakerModal', 1)" class="hover-shadow">
                             </section>
                             <section class="column">
-                                <img src="../images/candlemaker-schematic-cover-page.png " onclick="openModal();currentSlide(2)" class="hover-shadow">
-                            </section>
-                        </figure>
-
-                        <figure class="row">
-                            <section class="column">
-                                <img src="../images/candlemaker-cooling-schematic.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
-                            </section>
-                            <section class="column">
-                                <img src="../images/candlemaker-ui-schematic.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                                <img src="../images/candlemaker-schematic-cover-page.png " onclick="openModal('candlemakerModal');currentSlide('candlemakerModal', 2)" class="hover-shadow">
                             </section>
                         </figure>
 
                         <figure class="row">
                             <section class="column">
-                                <img src="../images/candlemaker.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="The Candle Maker!">
+                                <img src="../images/candlemaker-cooling-schematic.png" onclick="openModal('candlemakerModal');currentSlide('candlemakerModal', 3)" class="hover-shadow">
                             </section>
                             <section class="column">
-                                <img src="../images/candlemaker-team.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Team Candle Maker ˙𐃷˙">
+                                <img src="../images/candlemaker-ui-schematic.png" onclick="openModal('candlemakerModal');currentSlide('candlemakerModal', 4)" class="hover-shadow">
+                            </section>
+                        </figure>
+
+                        <figure class="row">
+                            <section class="column">
+                                <img src="../images/candlemaker.jpg" onclick="openModal('candlemakerModal');currentSlide('candlemakerModal', 5)" class="hover-shadow">
+                            </section>
+                            <section class="column">
+                                <img src="../images/candlemaker-team.jpg" onclick="openModal('candlemakerModal');currentSlide('candlemakerModal', 6)" class="hover-shadow">
                             </section>
                         </figure>
 
                         <!-- creating the modal -->
-                        <main id="myModal" class="modal">
-                            <span class="close-cursor" onclick="closeModal()">&times;</span>
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <main id="candlemakerModal" class="modal">
+                            <span class="close-cursor" onclick="closeModal('candlemakerModal')">&times;</span>
+                            <a class="prev" onclick="plusSlides('candlemakerModal', -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides('candlemakerModal', 1)">&#10095;</a>
                             
                             <article class="modal-content">
                                 <footer class="mySlides">
@@ -144,27 +156,27 @@
                                 <footer class="thumbnails-container">
                                  
                                     <figure class="column">
-                                        <img class="thumbnail" src="../images/candlemaker-board.png" onclick="currentSlide(1)" alt="Candle Maker PCB">
+                                        <img class="thumbnail" src="../images/candlemaker-board.png" onclick="currentSlide('candlemakerModal', 1)" alt="Candle Maker PCB">
                                     </figure>
 
                                     <figure class="column">
-                                        <img class="thumbnail" src="../images/candlemaker-schematic-cover-page.png" onclick="currentSlide(2)" alt="Schematic cover page for Candle Maker.">
+                                        <img class="thumbnail" src="../images/candlemaker-schematic-cover-page.png" onclick="currentSlide('candlemakerModal', 2)" alt="Schematic cover page for Candle Maker">
                                     </figure>
 
                                     <figure class="column">
-                                        <img class="thumbnail" src="../images/candlemaker-cooling-schematic.png" onclick="currentSlide(3)" alt="Schematic for cooling subsystem.">
+                                        <img class="thumbnail" src="../images/candlemaker-cooling-schematic.png" onclick="currentSlide('candlemakerModal', 3)" alt="Schematic for cooling subsystem">
                                     </figure>
 
                                     <figure class="column">
-                                        <img class="thumbnail" src="../images/candlemaker-ui-schematic.png" onclick="currentSlide(4)" alt="Schematic for user interface subsystem.">
+                                        <img class="thumbnail" src="../images/candlemaker-ui-schematic.png" onclick="currentSlide('candlemakerModal', 4)" alt="Schematic for user interface subsystem">
                                     </figure>
 
                                     <figure class="column">
-                                        <img class="thumbnail" src="../images/candlemaker.jpg" onclick="currentSlide(5)" alt="The Candle Maker!">
+                                        <img class="thumbnail" src="../images/candlemaker.jpg" onclick="currentSlide('candlemakerModal', 5)" alt="The Candle Maker!">
                                     </figure>
 
                                     <figure class="column">
-                                        <img class="thumbnail" src="../images/candlemaker-team.jpg" onclick="currentSlide(6)" alt="Team Candle Maker ˙𐃷˙">
+                                        <img class="thumbnail" src="../images/candlemaker-team.jpg" onclick="currentSlide('candlemakerModal', 6)" alt="Team Candle Maker ˙𐃷˙">
                                 
                                     </footer>
 
@@ -190,11 +202,112 @@
                         data-up-arrow="../images/up-day.png" onclick="dropdown('project-1', event)" alt="">
                     </article>
 
+                    
+
                     <article id="project-1" class="content">
                         <p>
                             <u>Duration</u>: September &mdash; December 2024<br><br>
                             More to come soon! :)
                         </p>
+<!--
+                        <figure class="row">
+                            <section class="column">
+                                <img src="../images/sensify-board-mainf.png" onclick="openModal('sensifyModal');currentSlide('sensifyModal', 1)" class="hover-shadow">
+                            </section>
+                            <section class="column">
+                                <img src="../images/sensify-board-mainb.png" onclick="openModal('sensifyModal');currentSlide('sensifyModal', 2)" class="hover-shadow">
+                            </section>
+                        </figure>
+
+                        <figure class="row">
+                            <section class="column">
+                                <img src="../images/sensify-haptics-schematic.png" onclick="openModal('sensifyModal');currentSlide('sensifyModal', 3)" class="hover-shadow">
+                            </section>
+                            <section class="column">
+                                <img src="../images/sensify-schematic-cover-page.png" onclick="openModal('sensifyModal');currentSlide('sensfiyModal', 4)" class="hover-shadow">
+                            </section>
+                        </figure>
+
+                        <figure class="row">
+                            <section class="column">
+                                <img src="../images/sensify.png" onclick="openModal('sensifyModal');currentSlide('sensifyModal', 5)" class="hover-shadow">
+                            </section>
+                            <section class="column">
+                                <img src="../images/sensify-team.jpg" onclick="openModal('sensifyModal');currentSlide('sensifyModal', 6)" class="hover-shadow">
+                            </section>
+                        </figure>
+
+                        <main id="sensifyModal" class="modal">
+                            <span class="close-cursor" onclick="closeModal('sensifyModal')">&times;</span>
+                            <a class="prev" onclick="plusSlides('sensifyModal', -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides('sensifyModal', 1)">&#10095;</a>
+
+                            <article class="modal-content">
+                                <footer class="mySlides">
+                                    <p class="numbertext">1 / 6</p>
+                                    <img src="../images/sensify-board-mainf.png">
+                                </footer>
+
+                                <footer class="mySlides">
+                                    <p class="numbertext">2 / 6</p>
+                                    <img src="../images/sensify-board-mainb.png">
+                                </footer>
+
+                                <footer class="mySlides">
+                                    <p class="numbertext">3 / 6</p>
+                                    <img src="../images/sensify-haptics-schematic.png">
+                                </footer>
+
+                                <footer class="mySlides">
+                                    <p class="numbertext">4 / 6</p>
+                                    <img src="../images/sensify-schematic-cover-page.png">
+                                </footer>
+
+                                <footer class="mySlides">
+                                    <p class="numbertext">5 / 6</p>
+                                    <img src="../images/sensify.png">
+                                </footer>
+
+                                <footer class="mySlides">
+                                    <p class="numbertext">6 / 6</p>
+                                    <img src="../images/sensify-team.jpg">
+                                </footer>
+
+                                <footer class="caption-container">
+                                    <p id="caption"></p>
+                                </footer>
+
+                                <footer class="thumbnails-container">
+
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/sensify-board-mainf.png" onclick="currentSlide('sensifyModal', 1)" alt="The front side of Sensify's main PCB!">
+                                    </figure>
+
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/sensify-board-mainb.png" onclick="currentSlide('sensifyModal', 2)" alt="The back side of Sensify's main PCB!">
+                                    </figure>
+
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/sensify-haptics-schematic.png" onclick="currentSlide('sensifyModal', 3)" alt="Schematic for the haptics subsystem">
+                                    </figure>
+
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/sensify-schematic-cover-page.png" onclick="currentSlide('sensifyModal', 4)" alt="Schematic cover page for Sensify's main board.">
+                                    </figure>
+
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/sensify.png" onclick="currentSlide('sensifyModal', 5)" alt="Sensify!">
+                                    </figure>
+
+                                    <figure class="column">
+                                        <img class="thumbnail" src="../images/sensify-team.jpg" onclick="currentSlide('sensifyModal', 6)" alt="Team Sensify :P">
+                                    </figure>
+                                </footer>
+                            </article>
+                        </main>
+
+                    -->
+            
 
                     </article>
 
